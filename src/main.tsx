@@ -5,7 +5,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="text-black bg-white w-screen h-screen dark:text-white dark:bg-black">
+    <div className="w-screen h-screen text-black transition-colors bg-white dark:text-white dark:bg-black">
       <App />
     </div>
   </StrictMode>
