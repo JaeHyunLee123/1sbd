@@ -1,11 +1,5 @@
-import { useSelector } from "react-redux";
 import logo from "../assets/temp-logo.webp";
-import DarkModeBtn from "../features/darkMode/DarkModeBtn";
-import { RootState } from "../app/store";
-
 const Header = () => {
-  const isDark = useSelector((state: RootState) => state.darkMode.isDark);
-
   return (
     <header className="flex items-center justify-between p-5 space-x-2 text-white bg-black dark:text-black dark:bg-white">
       <img src={logo} width={200} className="w-30" />
@@ -24,13 +18,6 @@ const Header = () => {
         <a href="https://www.instagram.com/everydayband_1sbd/" target="_blank">
           <i className="text-3xl font-medium transition fa-brands fa-instagram hover:scale-110"></i>
         </a>
-        <div className="flex flex-col items-center justify-between w-full space-y-1">
-          <span className="text-xs text-gray-400">
-            {isDark ? "Switch to light mode" : "Switch to dark mode"}
-          </span>
-          <DarkModeBtn />
-          <div />
-        </div>
       </div>
     </header>
   );
