@@ -1,0 +1,25 @@
+import logo from "../assets/temp-logo.webp";
+
+const Header = () => {
+  return (
+    <header className="flex items-center justify-between p-5 space-x-2 text-white bg-black dark:text-black dark:bg-white">
+      <img src={logo} width={200} className="w-30" />
+      <div className="flex items-center justify-start flex-1 space-x-2">
+        <span className="text-lg font-medium transition hover:underline hover:cursor-pointer">
+          프로젝트
+        </span>
+        <span className="text-lg font-medium transition hover:underline hover:cursor-pointer">
+          캘린더
+        </span>
+        <span className="text-lg font-medium transition hover:underline hover:cursor-pointer">
+          뉴스
+        </span>
+      </div>
+      <a href="https://www.instagram.com/everydayband_1sbd/" target="_blank">
+        <i className="text-3xl font-medium transition fa-brands fa-instagram hover:scale-110"></i>
+      </a>
+    </header>
+  );
+};
+
+export default Header;
