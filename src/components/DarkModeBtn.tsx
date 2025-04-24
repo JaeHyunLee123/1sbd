@@ -5,12 +5,12 @@ const DarkModeBtn = () => {
 
   return (
     <button
-      className="fixed flex items-center justify-center text-3xl transition bg-black rounded-full active:scale-90 hover:scale-110 bottom-5 right-5 size-14 dark:bg-white outline-0"
+      className="relative bg-transparent border-2 border-white rounded-full w-14 h-7 dark:border-black focus:outline-0"
       onClick={() => {
         setIsDark(!isDark);
       }}
     >
-      {isDark ? <span>☀️</span> : <span>🌙</span>}
+      <div className="absolute transition-all bg-white rounded-full size-4 top-1 left-1 dark:left-8 dark:bg-black" />
     </button>
   );
 };
