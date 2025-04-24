@@ -1,10 +1,7 @@
 import logo from "../assets/temp-logo.webp";
-import useDarkMode from "../hooks/useDarkMode";
-import DarkModeBtn from "./DarkModeBtn";
+import DarkModeBtn from "../features/darkMode/DarkModeBtn";
 
 const Header = () => {
-  const [isDark] = useDarkMode();
-
   return (
     <header className="flex items-center justify-between p-5 space-x-2 text-white bg-black dark:text-black dark:bg-white">
       <img src={logo} width={200} className="w-30" />
@@ -25,7 +22,7 @@ const Header = () => {
         </a>
         <div className="flex flex-col items-center justify-between w-full space-y-1">
           <span className="text-xs text-gray-400">
-            {isDark ? "Switch to light mode" : "Switch to dark mode"}
+            {"Switch to light mode"}
           </span>
           <DarkModeBtn />
           <div />

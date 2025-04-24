@@ -1,3 +1,5 @@
+//I'm not using it now i moved it to redux
+
 import { useEffect, useState } from "react";
 
 export default function useDarkMode() {
