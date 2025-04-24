@@ -9,7 +9,7 @@ const DarkModeBtn = () => {
 
   return (
     <button
-      className="relative bg-transparent border-2 border-white rounded-full w-14 h-7 dark:border-black focus:outline-0"
+      className="relative bg-transparent border-2 border-white rounded-full hover:cursor-pointer w-14 h-7 dark:border-black focus:outline-0"
       onClick={() => {
         dispatch(changeDarkMode(!isDark));
       }}

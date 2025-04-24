@@ -1,7 +1,11 @@
+import { useSelector } from "react-redux";
 import logo from "../assets/temp-logo.webp";
 import DarkModeBtn from "../features/darkMode/DarkModeBtn";
+import { RootState } from "../app/store";
 
 const Header = () => {
+  const isDark = useSelector((state: RootState) => state.darkMode.isDark);
+
   return (
     <header className="flex items-center justify-between p-5 space-x-2 text-white bg-black dark:text-black dark:bg-white">
       <img src={logo} width={200} className="w-30" />
@@ -22,7 +26,7 @@ const Header = () => {
         </a>
         <div className="flex flex-col items-center justify-between w-full space-y-1">
           <span className="text-xs text-gray-400">
-            {"Switch to light mode"}
+            {isDark ? "Switch to light mode" : "Switch to dark mode"}
           </span>
           <DarkModeBtn />
           <div />
