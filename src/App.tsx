@@ -11,7 +11,10 @@ export default function App() {
   return (
     <div className="flex flex-col items-center justify-center bg-white dark:bg-black">
       <Banner />
-      <div className="flex flex-col items-center w-full p-10 my-10 bg-white dark:bg-black">
+      <div className="flex flex-col items-center w-full p-10 py-10 my-10 bg-white dark:bg-black sm:px-40 ">
+        <h1 className="w-full font-bold max-w-[2000px] mb-8 sm:text-6xl text-5xl">
+          프로젝트
+        </h1>
         <div className="w-full items-center justify-center flex flex-wrap gap-20 max-w-[2000px]">
           <BandProjectCard
             subTitle="1st project"
@@ -57,14 +60,23 @@ export default function App() {
             image={[friendshipImg1, friendshipImg2, friendshipImg3]}
           />
         </div>
+        <div className="w-full max-w-[2000px] mt-20">
+          <h1 className="mb-4 text-3xl font-bold sm:text-4xl text-balance break-keep">
+            일상밴드 멤버에게 제공되는 혜택
+          </h1>
+          <ul className="flex flex-col space-y-1">
+            <li className="text-base sm:text-xl">
+              프로젝트 참여 1회 당 <strong>1만원 할인</strong>
+            </li>
+            <li className="text-base sm:text-xl">
+              일상밴드 <strong>합주실 할인</strong> 및 우선 대여
+            </li>
+            <li className="text-base sm:text-xl">굉장히 엄창난 혜택1</li>
+            <li className="text-base sm:text-xl">굉장히 엄창난 혜택2</li>
+            <li className="text-base sm:text-xl">굉장히 엄창난 혜택3</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
 }
-//벤데이 프로젝트
-
-//벤쿠스틱
-
-//뉴비
-
-//프렌즈십
