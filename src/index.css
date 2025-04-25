@@ -24,3 +24,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.text-shadow {
+  text-shadow: 0px 0px 5px black;
+}

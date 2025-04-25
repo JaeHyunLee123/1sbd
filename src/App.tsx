@@ -77,6 +77,20 @@ export default function App() {
           </ul>
         </div>
       </div>
+      <div
+        className={`bg-[url(./assets/oasis-perform.jpeg)] bg-center bg-cover flex flex-col justify-center items-center p-20  w-full`}
+      >
+        <p className="font-semibold text-white text-lg/7 sm:text-xl/8 md:text-2xl/10 text-balance break-keep text-shadow ">
+          음악은 누구나 할 수 있다는 의미의 뭔가 굉장히 멋진 문구
+          <br />
+          음악은 누구나 할 수 있다는 의미의 뭔가 굉장히 멋진 문구
+        </p>
+        <div className="px-[2px] py-[4px] bg-white border-black border-4 box-border hover:scale-105 transition-transform hover:cursor-pointer">
+          <span className="text-2xl font-semibold text-white px-[3px] py-[4px] box-border bg-black text-center">
+            Join
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
