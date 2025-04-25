@@ -13,11 +13,11 @@ const Footer = () => {
           Business Lincenese_ 515-70-00446
         </span>
         <span className="text-sm text-gray-400">
-          Addresss_ 구로구 공원로6다길 14
+          Addresss_ 구로구 공원로6다길 14 Korea
         </span>
       </div>
       <div className="flex flex-col justify-center space-y-2">
-        <span className="text-sm text-gray-400">Korea 대표자_이규호</span>
+        <span className="text-sm text-gray-400">대표자_이규호</span>
         <span className="text-sm text-gray-400">Tel_ 010-4659-3752</span>
       </div>
       <div className="flex flex-col items-center justify-between space-y-1">
