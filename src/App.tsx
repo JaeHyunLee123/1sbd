@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="flex flex-col items-center justify-center bg-white dark:bg-black">
       <Banner />
-      <div className="flex flex-col items-center justify-center p-10 space-y-20 bg-white dark:bg-black">
+      <div className="flex flex-col items-center justify-center p-10 my-10 space-y-20 bg-white dark:bg-black">
         <BandProjectCard
           subTitle="1st project"
           description={
@@ -21,7 +21,7 @@ export default function App() {
             </>
           }
           title="BANDAY"
-          image={bandayImg}
+          image={[bandayImg]}
         />
         <BandProjectCard
           subTitle="2nd project"
@@ -32,7 +32,7 @@ export default function App() {
             </>
           }
           title="Bcoustic"
-          image={bcousticImg}
+          image={[bcousticImg]}
         />
         <BandProjectCard
           subTitle="3rd project"
@@ -43,7 +43,7 @@ export default function App() {
             </>
           }
           title="NEWB Band"
-          image={newBImg}
+          image={[newBImg]}
         />
         <BandProjectCard
           subTitle="Special project"
@@ -53,7 +53,7 @@ export default function App() {
             </>
           }
           title="Friendship"
-          image={friendshipImg1}
+          image={[friendshipImg1]}
         />
       </div>
     </div>

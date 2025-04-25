@@ -5,7 +5,7 @@ interface BandProjectCardProps {
   subTitle: string;
   description: string | ReactNode;
   title: string;
-  image: string;
+  image: string[];
 }
 
 export default function BandProjectCard({
@@ -23,7 +23,7 @@ export default function BandProjectCard({
       <h1 className="text-4xl font-bold sm:text-xl">{title}</h1>
       <img
         alt={title}
-        src={image}
+        src={image[0]}
         width={600}
         className="rounded shadow-lg shadow-neutral-500 dark:shadow-neutral-700"
       />
