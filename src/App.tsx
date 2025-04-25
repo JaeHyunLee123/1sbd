@@ -4,8 +4,8 @@ import bandayImg from "./assets/banday/banday1.webp";
 import bcousticImg from "./assets/bancoustic/bandcoustic.webp";
 import newBImg from "./assets/newb/newb.webp";
 import friendshipImg1 from "./assets/friendship/friendship1.jpeg";
-//import friendshipImg2 from "./assets/friendship/friendship2.jpeg";
-//import friendshipImg3 from "./assets/friendship/friendship3.jpeg";
+import friendshipImg2 from "./assets/friendship/friendship2.jpeg";
+import friendshipImg3 from "./assets/friendship/friendship3.jpeg";
 
 export default function App() {
   return (
@@ -53,7 +53,7 @@ export default function App() {
             </>
           }
           title="Friendship"
-          image={[friendshipImg1]}
+          image={[friendshipImg1, friendshipImg2, friendshipImg3]}
         />
       </div>
     </div>
