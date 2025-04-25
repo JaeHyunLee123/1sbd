@@ -55,7 +55,7 @@ export default function BandProjectCard({
           </button>
           <div
             ref={scrollRef}
-            className="flex flex-row w-full overflow-x-scroll shadow-lg scrollbar-hidden scroll-smooth shadow-neutral-500 dark:shadow-neutral-700"
+            className="flex flex-row w-4/5 overflow-x-scroll shadow-lg scrollbar-hidden scroll-smooth shadow-neutral-500 dark:shadow-neutral-700"
           >
             {image.map((img, idx) => (
               <img
