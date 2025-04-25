@@ -10,7 +10,7 @@ import { Provider } from "react-redux";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
-      <div className="w-screen h-screen text-black transition-colors bg-white dark:text-white dark:bg-black">
+      <div className="text-black transition-colors bg-white  dark:text-white dark:bg-black">
         <Header />
         <App />
         <Footer />
