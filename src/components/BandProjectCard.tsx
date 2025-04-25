@@ -20,12 +20,12 @@ export default function BandProjectCard({
         {subTitle}
       </h3>
       <p className="sm:text:lg">{description}</p>
-      <h1 className="text-4xl font-bold">{title}</h1>
+      <h1 className="text-4xl font-bold sm:text-xl">{title}</h1>
       <img
         alt={title}
         src={image}
         width={600}
-        className="rounded shadow-lg shadow-gray-500 sm:text-xl"
+        className="rounded shadow-lg shadow-neutral-500 dark:shadow-neutral-700"
       />
     </section>
   );
