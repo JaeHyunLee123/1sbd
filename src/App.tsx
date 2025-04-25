@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="flex flex-col items-center justify-center bg-white dark:bg-black">
       <Banner />
-      <div className="flex flex-col items-center w-full p-10 py-10 my-10 bg-white dark:bg-black sm:px-40 ">
+      <div className="flex flex-col items-center w-full p-10 py-10 my-10 bg-white dark:bg-black sm:px-15 md:px-20 lg:px-24 xl:px-30 2xl:px-40">
         <h1 className="w-full font-bold max-w-[2000px] mb-8 sm:text-6xl text-5xl">
           프로젝트
         </h1>
