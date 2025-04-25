@@ -11,7 +11,10 @@ const Header = () => {
           캘린더
         </span>
         <span className="text-lg font-medium transition hover:underline hover:cursor-pointer">
-          뉴스
+          갤러리
+        </span>
+        <span className="text-lg font-medium transition hover:underline hover:cursor-pointer">
+          FAQ
         </span>
       </div>
       <div className="flex items-center justify-start space-x-2">
