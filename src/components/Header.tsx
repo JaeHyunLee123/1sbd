@@ -1,10 +1,14 @@
-import logo from "../assets/temp-logo.webp";
+import logo from "../assets/logo.webp";
 import NaverCafe from "../assets/navercafe.svg?react";
 
 const Header = () => {
   return (
     <header className="flex flex-col items-start justify-between p-5 space-x-2 space-y-2 text-white bg-black dark:text-black dark:bg-white sm:flex-row sm:items-center">
-      <img src={logo} width={200} className="w-30" />
+      <img
+        src={logo}
+        width={200}
+        className="object-cover object-center rounded-sm w-30 h-14 ring-2 ring-white dark:ring-neutral-600"
+      />
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center justify-start flex-1 space-x-2">
           <span className="text-lg font-medium transition hover:underline hover:cursor-pointer">
