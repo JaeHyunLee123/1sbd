@@ -42,7 +42,7 @@ export default function BandProjectCard({
             alt={title}
             src={image[0]}
             width={1000}
-            className="w-full h-auto rounded shadow-lg shadow-neutral-500 dark:shadow-neutral-700"
+            className="w-full h-auto transition-transform rounded shadow-lg shadow-neutral-500 dark:shadow-neutral-700 hover:cursor-pointer hover:scale-105"
           />
         </div>
       ) : (
@@ -55,7 +55,7 @@ export default function BandProjectCard({
           </button>
           <div
             ref={scrollRef}
-            className="flex flex-row w-4/5 overflow-x-scroll shadow-lg scrollbar-hidden scroll-smooth shadow-neutral-500 dark:shadow-neutral-700"
+            className="flex flex-row w-4/5 overflow-x-scroll transition-transform shadow-lg scrollbar-hidden scroll-smooth shadow-neutral-500 dark:shadow-neutral-700 hover:cursor-pointer hover:scale-105"
           >
             {image.map((img, idx) => (
               <img
